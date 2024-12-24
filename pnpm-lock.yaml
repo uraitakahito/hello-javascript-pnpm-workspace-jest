@@ -15,15 +15,15 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint@8.57.1)
 
-  src/module-a:
+  packages/module-a:
     dependencies:
       module-b:
         specifier: workspace:*
         version: link:../module-b
 
-  src/module-b: {}
+  packages/module-b: {}
 
-  src/module-using-jest:
+  packages/module-using-jest:
     devDependencies:
       jest:
         specifier: ^29.7.0
