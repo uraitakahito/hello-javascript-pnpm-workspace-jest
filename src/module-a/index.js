@@ -1,3 +1,3 @@
-console.log("module-a");
+console.log('module-a');
 
-require("module-b");
+require('module-b');
