@@ -19,6 +19,9 @@
       "runtimeExecutable": "sh",
       "program": "${workspaceRoot}/packages/module-using-jest/node_modules/.bin/jest",
       "args": ["${relativeFile}"],
+      "env": {
+        "NODE_OPTIONS": "--experimental-vm-modules"
+      },
       "console": "integratedTerminal",
       // the visibility of the Debug Console panel during a debugging session.
       "internalConsoleOptions": "neverOpen"
