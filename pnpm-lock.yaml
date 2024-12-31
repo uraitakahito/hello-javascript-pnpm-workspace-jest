@@ -37,6 +37,12 @@ importers:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@22.10.2)
 
+  packages/using-internal-esmodule:
+    devDependencies:
+      exported-internal-esmodule:
+        specifier: workspace:*
+        version: link:../exported-internal-esmodule
+
 packages:
 
   '@ampproject/remapping@2.3.0':
