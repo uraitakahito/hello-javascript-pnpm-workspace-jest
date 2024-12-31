@@ -21,6 +21,8 @@ importers:
         specifier: ^28.10.0
         version: 28.10.0(eslint@8.57.1)(jest@29.7.0(@types/node@22.10.2))(typescript@5.7.2)
 
+  packages/exported-internal-esmodule: {}
+
   packages/module-a:
     dependencies:
       module-b:
@@ -34,6 +36,12 @@ importers:
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@22.10.2)
+
+  packages/using-internal-esmodule:
+    devDependencies:
+      exported-internal-esmodule:
+        specifier: workspace:*
+        version: link:../exported-internal-esmodule
 
 packages:
 
